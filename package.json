@@ -1,0 +1,39 @@
+{
+  "name": "animation-curve",
+  "version": "0.0.1",
+  "description": "Пример анимации кривой Безье",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production --colors --progress",
+    "start": "webpack-dev-server --mode development --hot --colors --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:mrzigo/animation-curve.git"
+  },
+  "author": "mr.zigo@yandex.ru",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.10",
+    "fabric": "^2.3.3",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.0.6",
+    "image-webpack-loader": "^4.2.0",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.4",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.8.2",
+    "resolve-url-loader": "^2.3.0",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "uglifyjs-webpack-plugin": "^1.2.3",
+    "webpack": "^4.8.1",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4",
+    "yargs": "^11.0.0"
+  }
+}
