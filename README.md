@@ -8,10 +8,11 @@
 
 ### Описание проекта
 В проекте использована библиотека Fabric.js (http://fabricjs.com/)
+
 Сборка основана на webpack-starter (https://github.com/LeeSwagger/webpack-starter)
 
 ### Запуск проекта
-`git clone https://github.com/mrzigo/animation-curve`
-`cd animation-curve`
-`npm i`
-`npm start`
+* `git clone https://github.com/mrzigo/animation-curve`
+* `cd animation-curve`
+* `npm i`
+* `npm start`
