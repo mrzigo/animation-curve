@@ -8,8 +8,10 @@ import Curvature4 from './curvature4';
 // Анимация. Сведение кривой в прямую и обратно
 let $curvature1 = $('#curvature1');
 let myAnimateObject1 = null;
+// Добавим в обработку анимации калбеки обратного вызова (часто бывает полезным)
 const callbackLeftPosition = () => { $curvature1.css({'border-color': 'green'}); }
 const callbackRightPosition = () => { $curvature1.css({'border-color': 'red'}); }
+// Часто анимация инициализируется дольше чем загружается страница, обязательно дабавим калбек по готовности
 const callbackComplete = () => {
     $curvature1.parent().find('.upper-canvas').click(() => {
         if (myAnimateObject1.isStop) {
@@ -40,4 +42,4 @@ myAnimateObject3.start(); // с этого момента начинается �
 
 let $curvature4 = $('#curvature4');
 let myAnimateObject4 = new Curvature4({canvas: $curvature4[0]});
-myAnimateObject4.start(); // с этого момента начинается магия 3
+myAnimateObject4.start(); // с этого момента начинается магия 4
