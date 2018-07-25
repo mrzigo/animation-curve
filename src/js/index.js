@@ -3,6 +3,7 @@ import Curvature1 from './curvature1';
 import Curvature2 from './curvature2';
 import Curvature3 from './curvature3';
 import Curvature4 from './curvature4';
+import Spray from './pixijs';
 
 
 // Анимация. Сведение кривой в прямую и обратно. Элементарный пример.
@@ -64,3 +65,6 @@ myAnimateObject3.start();
 let $curvature4 = $('#curvature4');
 let myAnimateObject4 = new Curvature4({canvas: $curvature4[0]});
 myAnimateObject4.start();
+
+// Пример на PixiJS
+const spray = new Spray({canvas: { parent: $('div.spray') }});
