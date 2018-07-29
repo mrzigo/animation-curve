@@ -35,11 +35,30 @@
         .upper-canvas {
             border: 1px solid transparent;
         }
+
+        .move {
+            position: absolute;
+            bottom: 400px;
+            transform: scale(10);
+            animation: move 3s;
+        }
+        @keyframes move {
+            0% {
+                bottom: 200px;
+                transform: scale(1);
+            }
+            100% {
+                bottom: 400px;
+                transform: scale(10);
+            }
+        }
+
     </style>
 </head>
 <body>
     <h1>Пример анимации кривой Безье</h1>
     <div class='center'>
+        <div width='300' height='300' class='move'>css animation</div>
         <canvas width='300' height='300' id='curvature1'></canvas>
         <canvas width='300' height='300' id='curvature2'></canvas>
         <canvas width='300' height='300' id='curvature3'></canvas>
